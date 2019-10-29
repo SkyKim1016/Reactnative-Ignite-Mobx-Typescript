@@ -21,7 +21,7 @@ export class StatefulNavigator extends React.Component<StatefulNavigatorProps, {
   render() {
     // grab our state & dispatch from our navigation store
     const { state, dispatch, actionSubscribers } = this.props.navigationStore
-
+    
     // create a custom navigation implementation
     this.currentNavProp = getNavigation(
       RootNavigator.router,
